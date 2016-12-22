@@ -1,0 +1,39 @@
+# General settings
+title: SocioLogs
+title_html: "<b>socio</b>logs"
+pitch: sociologie, numérique et statistiques
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+cc: by-nc
+dateformat: "%e %B %Y" 
+nb_posts_page: 10
+repo: https://github.com/gaalcaras/sociologs
+
+# Author
+author: Gabriel Alcaras
+shortbio: Doctorant en sociologie.
+author_display: true
+
+email: gabriel.alcaras@ehess.fr
+twitter_username: gaalcaras
+github_username: gaalcaras
+keybase_username: gaalcaras
+linkedin_username: gaalcaras
+author_website: https://gaalcaras.com
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "fenced_code_blocks", "autolink", "footnotes"]
+theme: academic
+gems:
+  - jekyll-feed
+  - jekyll-assets
+exclude:
+  - Gemfile
+  - Gemfile.lock
