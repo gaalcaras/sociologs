@@ -1,15 +1,37 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: À propos
+permalink: /a-propos/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<br>
+**socio**, abbréviation de « sociologie ».
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+**log**, n. m. [anglais] :
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+1. Journal de bord, journal de terrain.
+2. <span style="color: grey">[informatique]</span> Fichier qui enregistre les événements d'un processus donné.
+
+![The captain's log](http://vignette2.wikia.nocookie.net/memoryalpha/images/c/c6/Captain%27s_log_on_monitor.jpg/revision/latest/scale-to-width-down/584?cb=20121203012109&path-prefix=en)
+<center>
+The captain's log @ [Memory Alpha](http://memory-alpha.wikia.com/wiki/File:Captain%27s_log_on_monitor.jpg)
+</center>
+
+## Le blog
+
+J'ai lancé SocioLogs en décembre 2016 : ne pensant pas à haute voix, le blog m'a paru être un bon substitut pour m'aider à réfléchir aux sujets qui me tiennent à cœur.
+Sociologie, numérique et statistiques occupent une place toute particulière dans ces pages − abordés conjointement ou séparément.
+
+Même si ce blog n'autorise pas les commentaires, vos remarques ou, mieux encore, vos contributions sont les bienvenues.
+Je vous invite à passer par les [Github Issues](https://github.com/gaalcaras/sociologs/issues/) pour me soumettre vos corrections.
+Si Github n'est pas à votre goût, vous avez la possibilité de me contacter via [email](mailto:{{ site.email }}) ou [Twitter](https://twitter.com/{{ site.twitter_username }}).
+
+## Mentions légales
+
+Ce site, créé par [Gabriel Alcaras](https://gaalcaras.com), est mis à disposition selon les termes de
+la licence [CC {{ site.cc | upcase }}](https://creativecommons.org/licenses/{{ site.cc }}/4.0).
+
+En l’absence d’indication contraire, cette licence concerne l’ensemble des contenus de ce blog (billets et pages) à l’exception des images qui l’illustrent (celles-ci demeurent placées sous leur mention légale d’origine).
+
+SocioLogs utilise le générateur de pages statiques [Jekyll](http://jekyllrb.com/) et le thème [Academic](https://github.com/gaalcaras/academic/).
+Le [code source]({{ site.repo }}) du site est mis à votre disposition.
