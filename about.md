@@ -12,7 +12,7 @@ permalink: /a-propos/
 1. Journal de bord, journal de terrain.
 2. <span style="color: grey">[informatique]</span> Fichier qui enregistre les événements d'un processus donné.
 
-![The captain's log](http://vignette2.wikia.nocookie.net/memoryalpha/images/c/c6/Captain%27s_log_on_monitor.jpg/revision/latest/scale-to-width-down/584?cb=20121203012109&path-prefix=en)
+![The captain's log](/assets/img/captain_log.jpg)
 <center>
 The captain's log @ [Memory Alpha](http://memory-alpha.wikia.com/wiki/File:Captain%27s_log_on_monitor.jpg)
 </center>
