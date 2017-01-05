@@ -26,6 +26,11 @@ keybase_username: gaalcaras
 linkedin_username: gaalcaras
 author_website: https://gaalcaras.com
 
+# Piwik
+piwik:
+  url: batcloud.me/piwik
+  site_id: 1
+
 # Build settings
 markdown: redcarpet
 redcarpet:
