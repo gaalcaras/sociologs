@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Une approche pratique des archives en ligne"
+permalink: /approche-pratique-archives-en-ligne/
 date:   2016-12-22 18:01:27 +0100
 categories: jekyll update
 thumbnail: images/archive.jpg
