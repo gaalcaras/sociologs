@@ -72,7 +72,7 @@ Enfin, la [documentation de Zotero](https://www.zotero.org/support/dev/translato
 Nous voilà donc confronté·e·s au fameux arbitrage utilitariste de l'automatisation : le gain de temps dû à l'automatisation de la tâche compensera-t-il le temps passé à la mettre en place ?
 
 <center>
-![Xkcd: automation](http://imgs.xkcd.com/comics/automation.png)
+![Xkcd: automation](https://imgs.xkcd.com/comics/automation.png)
 
 Automation @ [Xkcd](https://xkcd.com/1319/)
 </center>
