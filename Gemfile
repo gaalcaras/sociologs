@@ -13,4 +13,5 @@ group :jekyll_plugins do
    gem "redcarpet"
    gem "jekyll-assets"
    gem "jekyll-livereload"
+   gem "jekyll-last-modified-at"
 end

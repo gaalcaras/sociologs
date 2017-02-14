@@ -39,6 +39,7 @@ theme: academic
 gems:
   - jekyll-feed
   - jekyll-assets
+  - jekyll-last-modified-at
 exclude:
   - jekyll_build.sh
   - Gemfile
