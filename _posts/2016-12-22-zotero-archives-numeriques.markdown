@@ -1,9 +1,8 @@
 ---
 layout: post
 title:  "Une approche pratique des archives en ligne"
-permalink: /approche-pratique-archives-en-ligne/
+permalink: /fr/approche-pratique-archives-en-ligne/
 date:   2016-12-22 18:01:27 +0100
-categories: jekyll update
 thumbnail: images/archive.jpg
 summary: >
   Les activités en ligne sont de plus en plus mobilisées comme matériaux d'enquête
@@ -35,7 +34,7 @@ Ce système peut être adapté pour toutes les activités en ligne publiques, ac
 Avant d'entrer dans les détails, commençons par donner une vue d'ensemble de ce système.
 
 <center>
-![Le système](/assets/img/zotero-archives-numeriques/screencast.gif)
+![Le système d'archivage en action](/assets/img/zotero-archives-numeriques/screencast.gif)
 
 Notre solution en action
 </center>
@@ -105,16 +104,16 @@ Dans ce tutoriel, je prends [cet email](https://marc.info/?l=git&m=1114902996288
 
 Commencez par repérer toutes les métadonnées utiles que vous pouvez extraire de la page :
 
-| Champ | Valeur |
-| ----- | ------ |
-| Titre | **Re: Trying to use AUTHOR_DATE** |
-| Publication | **git** - Mailing list ARChive |
-| Auteur | **Linus Torvalds** |
-| URL | **https://marc.info/?l=git&m=111490299628887&w=2**|
-| Date | **2005-04-30** |
-| Date de consultation | date du jour |
-| Type | email |
-| Langue | en |
+| Champ                | Valeur                                             |
+| -----                | ------                                             |
+| Titre                | **Re: Trying to use AUTHOR_DATE**                  |
+| Publication          | **git** - Mailing list ARChive                     |
+| Auteur               | **Linus Torvalds**                                 |
+| URL                  | **https://marc.info/?l=git&m=111490299628887&w=2** |
+| Date                 | **2005-04-30**                                     |
+| Date de consultation | date du jour                                       |
+| Type                 | email                                              |
+| Langue               | en                                                 |
 
 <center>Valeurs à extraire de la page</center>
 
@@ -175,7 +174,7 @@ Vous pouvez vérifier que `detectWeb()` renvoie bien "email" systématiquement e
 
 ### `doWeb()`, le nerf de la guerre
 
-La deuxième fonction `doWeb` est celle qui procède à l'extraction des métadonnées et à leur enregistrement dans la base de données de Zotero.
+La deuxième fonction `doWeb()` est celle qui procède à l'extraction des métadonnées et à leur enregistrement dans la base de données de Zotero.
 
 Pour ce faire, cette fonction demande de créer une nouvelle instance de l'objet `item`, de le modifier avec les métadonnées extraites de la page et enfin de l'enregistrer dans la base.
 Schématiquement, notre code sera donc organisé comme suit :
@@ -241,8 +240,7 @@ C'est une fonction qui exécute une requête `req` au format XPath sur l'éléme
 Dans notre exemple :
 
   + la requête `//font/a[1]` signifie : « parmi tous les nœuds `font`, sélectionner le premier nœud enfant `a`».
-  + l'élément xml est la variable `doc`, fournie en argument de la fonction `doWeb`, qui correspond au code html de la page.
-
+  + l'élément XML est la variable `doc`, fournie en argument de la fonction `doWeb`, qui correspond au code html de la page.
 
 Je recommande de tester régulièrement[^debug] que vos requêtes XPath fonctionnent, en particulier si vous débutez avec ce type de syntaxe.
 
@@ -284,7 +282,7 @@ email.accessDate = 'CURRENT_TIMESTAMP'
 email.url = url
 ```
 
-Nous utilisons à nouveau une fonction des *Zotero Utilities*, `cleanAuthor`, qui formate automatiquement une chaîne de caractères en nom de famille.
+Nous utilisons à nouveau une fonction des *Zotero Utilities*, `cleanAuthor()`, qui formate automatiquement une chaîne de caractères en nom de famille.
 Je souligne l'importance de conserver la date et l'heure de consultation de l'email dans `accessDate` : c'est l'attribut qui est utilisé pour ajouter automatiquement « consulté le xx/xx/xxxx » à votre référence.
 
 Il ne nous reste plus qu'à signaler à Zotero que nous avons terminé les modifications des propriétés de l'objet pour qu'il procède à son enregistrement :
@@ -303,7 +301,6 @@ Nous allons donc systématiquement vérifier que la page contient le texte "Mess
 
 ```javascript
 var msgId = ZU.xpathText(doc, '//font/text()')
-Zotero.debug(msgId)
 
 if (msgId !== null && msgId.indexOf('Message-ID: ')) {
   return 'email'

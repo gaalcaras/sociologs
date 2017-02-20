@@ -1,5 +1,6 @@
 ---
 title: Archives
 layout: archive
-permalink: /fr/archives/
+permalink: /en/archives/
+lang: en
 ---

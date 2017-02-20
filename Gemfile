@@ -14,4 +14,5 @@ group :jekyll_plugins do
    gem "jekyll-assets"
    gem "jekyll-livereload"
    gem "jekyll-last-modified-at"
+   gem "jekyll-data"
 end

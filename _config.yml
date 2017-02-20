@@ -1,22 +1,38 @@
 # General settings
 title: SocioLogs
 title_html: "<b>socio</b>logs"
-pitch: sociologie, numérique et statistiques
-description: >
-  Intéressé·e par les liens entre société et numérique ?
-  SocioLogs aussi. Des débats théoriques aux questions pratiques, ce blog
-  interroge le numérique en croisant sociologie et statistiques.
+pitch:
+  fr: sociologie, numérique et statistiques
+  en: sociology, digital technologies and statistics
+description:
+  fr: >
+    Intéressé·e par les liens entre société et numérique ?
+    SocioLogs aussi. Des débats théoriques aux questions pratiques, ce blog
+    interroge le numérique en croisant sociologie et statistiques.
+  en: >
+    How do society and digital technologies interact with each other?
+    That's what SocioLogs is all about, from theoretical debates to
+    practical research questions in sociology and statistics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sociologs.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
 cc: by-nc
-dateformat: "%e %B %Y" 
 nb_posts_page: 10
 repo: https://github.com/gaalcaras/sociologs
 
+# Langs
+langs: ["fr", "en"]
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: "fr"
+
 # Author
 author: Gabriel Alcaras
-shortbio: Doctorant en sociologie.
+shortbio:
+  fr: Doctorant en sociologie.
+  en: PhD student in sociology.
 author_display: true
 
 email: gabriel.alcaras@ehess.fr
@@ -24,7 +40,9 @@ twitter_username: gaalcaras
 github_username: gaalcaras
 keybase_username: gaalcaras
 linkedin_username: gaalcaras
-author_website: https://gaalcaras.com
+author_website:
+  fr: https://gaalcaras.com/fr/
+  en: https://gaalcaras.com/en/
 
 # Piwik
 piwik:

@@ -1,0 +1,2 @@
+Sitemap: https://sociologs.com/fr/sitemap.xml
+User-agent: *

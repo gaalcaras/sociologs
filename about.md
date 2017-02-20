@@ -1,21 +1,22 @@
 ---
 layout: page
 title: À propos
-permalink: /a-propos/
+permalink: /fr/a-propos/
 ---
 
 <br>
-**socio**, abbréviation de « sociologie ».
+**socio**, abréviation de « sociologie ».
 
 **log**, n. m. [anglais] :
 
 1. Journal de bord, journal de terrain.
 2. <span style="color: grey">[informatique]</span> Fichier qui enregistre les événements d'un processus donné.
 
-![The captain's log](/assets/img/captain_log.jpg)
-<center>
-The captain's log @ [Memory Alpha](http://memory-alpha.wikia.com/wiki/File:Captain%27s_log_on_monitor.jpg)
-</center>
+{% include image.html src="/assets/img/captain_log.jpg"
+                      caption="The captain's log"
+                      desc="Journal de bord dans Star Trek"
+                      source="Memory Alpha"
+                      href="http://memory-alpha.wikia.com/wiki/File:Captain%27s_log_on_monitor" %}
 
 ## Le blog
 
@@ -28,7 +29,7 @@ Si Github n'est pas à votre goût, vous avez la possibilité de me contacter vi
 
 ## Mentions légales
 
-Ce site, créé par [Gabriel Alcaras](https://gaalcaras.com), est mis à disposition selon les termes de
+Ce site, créé par [Gabriel Alcaras](https://gaalcaras.com/fr/), est mis à disposition selon les termes de
 la licence [CC {{ site.cc | upcase }}](https://creativecommons.org/licenses/{{ site.cc }}/4.0).
 
 En l’absence d’indication contraire, cette licence concerne l’ensemble des contenus de ce blog (billets et pages) à l’exception des images qui l’illustrent (celles-ci demeurent placées sous leur mention légale d’origine).
